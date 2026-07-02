@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══ SEO ═══ -->
+  <title>Fièvre Q : causes, symptômes, diagnostic et traitement | IHU Méditerranée Infection</title>
+  <meta name="description" content="Tout comprendre sur la fièvre Q (Coxiella burnetii) : transmission, symptômes, formes aiguë et chronique, diagnostic sérologique et traitement. Fiche médicale IHU Méditerranée Infection." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ihu-mediterranee-infection.fr/fiches-maladies/fievre-q" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Fièvre Q : causes, symptômes, diagnostic et traitement" />
+  <meta property="og:description" content="Une infection bactérienne transmise par les ruminants d'élevage, le plus souvent bénigne mais parfois grave. Fiche complète par l'IHU Méditerranée Infection." />
+  <meta property="og:site_name" content="IHU Méditerranée Infection" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Google Fonts : Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+  <!-- ═══ JSON-LD — FAQPage ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "La fièvre Q est-elle contagieuse d'une personne à l'autre ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La transmission interhumaine est exceptionnelle. On se contamine presque toujours par contact avec des animaux d'élevage infectés ou leur environnement (poussières, aérosols, produits de mise-bas)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Existe-t-il un vaccin contre la fièvre Q ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un vaccin destiné aux professions exposées existe dans certains pays (Australie notamment). En France, la prévention repose surtout sur des mesures d'hygiène en élevage et la protection des travailleurs exposés."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Suis-je à risque de forme chronique de fièvre Q ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le risque de forme chronique concerne surtout les personnes ayant une atteinte cardiaque préexistante (valvulopathie, anévrisme), une immunodépression ou une grossesse. Un suivi sérologique régulier est alors recommandé après une infection aiguë documentée."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quand faut-il consulter pour une fièvre Q ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Devant une fièvre prolongée inexpliquée, des maux de tête intenses ou un syndrome grippal persistant, surtout en cas d'exposition à des animaux d'élevage, parlez-en rapidement à votre médecin. Une sérologie permettra d'orienter le diagnostic."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ═══════════════════════════════════════════════════════════════
+       GABARIT IHU MÉDITERRANÉE INFECTION — FICHE MALADIE v2
+       Système de design : alternance bandes blanc #fff / crème #f4f3f1
+       Bleu #243f8d | Or #9a7d36 | Corps : bleu, pas gris
+       Pour créer une nouvelle fiche : dupliquer et changer le contenu.
+    ═══════════════════════════════════════════════════════════════ */
+
+    /* ─── Reset ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ─── Tokens ─── */
+    :root {
+      --blue:       #243f8d;
+      --blue-dim:   rgba(36,63,141,0.72);   /* corps de texte */
+      --blue-light: #6a82b8;
+      --blue-bg:    #e8edf7;
+      --gold:       #9a7d36;
+      --gold-bg:    #f5eed8;
+      --white:      #ffffff;
+      --cream:      #f4f3f1;
+      --border:     #e2dfd8;
+      --radius:     6px;
+      --font:       'Poppins', system-ui, sans-serif;
+      --col:        800px;   /* largeur max du texte courant */
+      --wide:       1160px;  /* largeur max des sections larges */
+      --pad-v:      90px;    /* padding vertical desktop des sections */
+      --pad-v-sm:   56px;    /* padding vertical mobile */
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--blue-dim);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── Typographie ─── */
+    h1 {
+      font-size: clamp(2.1rem, 5vw, 3.1rem);
+      font-weight: 800;
+      color: var(--blue);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+    h2 {
+      font-size: clamp(1.4rem, 3.2vw, 2rem);
+      font-weight: 700;
+      color: var(--blue);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--blue);
+      line-height: 1.3;
+    }
+    p { margin: 0; }
+    p + p { margin-top: 1rem; }
+    strong { font-weight: 600; color: var(--blue); }
+    em { font-style: italic; }
+
+    a { color: var(--blue); text-decoration: none; transition: color .18s; }
+    a:hover { color: var(--gold); }
+    a:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 3px; }
+
+    /* ─── Sur-titre signature IHU ─── */
+    .overtitle {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    /* ─── Layout ─── */
+    .inner       { max-width: var(--col);  margin: 0 auto; padding: 0 1.5rem; }
+    .inner--wide { max-width: var(--wide); margin: 0 auto; padding: 0 1.5rem; }
+
+    /* Bandes alternées */
+    .band        { padding: var(--pad-v) 0; }
+    .band--white { background: var(--white); }
+    .band--cream { background: var(--cream); }
+    .band--blue  { background: var(--blue);  }
+
+    @media (max-width: 680px) {
+      .band { padding: var(--pad-v-sm) 0; }
+    }
+    @media (max-width: 480px) {
+      .band { padding: 44px 0; }
+    }
+
+    /* ─── HEADER ─── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+    .logo-img { display: block; height: 42px; width: auto; }
+
+    nav ul { display: flex; align-items: center; gap: 2rem; list-style: none; }
+    nav a  { font-size: 0.85rem; font-weight: 500; color: var(--blue-dim); }
+    nav a:hover { color: var(--blue); }
+    nav a[aria-current="page"] { color: var(--blue); font-weight: 600; }
+
+    .btn-nav {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--white) !important;
+      font-weight: 600;
+      font-size: 0.82rem;
+      padding: 0.5rem 1.25rem;
+      border-radius: var(--radius);
+      letter-spacing: 0.02em;
+      transition: opacity .18s;
+    }
+    .btn-nav:hover { opacity: 0.88; }
+
+    .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--blue); border-radius: 2px; }
+    @media (max-width: 740px) {
+      nav ul { display: none; }
+      .hamburger { display: flex; }
+    }
+
+    /* ─── BREADCRUMB ─── */
+    .breadcrumb {
+      background: var(--cream);
+      border-bottom: 1px solid var(--border);
+      padding: 0.7rem 0;
+      font-size: 0.79rem;
+      color: var(--blue-light);
+    }
+    .breadcrumb a { color: var(--blue-light); }
+    .breadcrumb a:hover { color: var(--blue); }
+    .breadcrumb__sep { margin: 0 0.45rem; opacity: .5; }
+    .breadcrumb strong { color: var(--blue); font-weight: 500; }
+
+    /* ─── HERO ─── */
+    .hero { padding: 72px 0 80px; background: var(--white); }
+    .hero h1 { max-width: 820px; margin-bottom: 1.25rem; margin-top: 0.5rem; }
+    .hero__chapeau {
+      font-size: 1.1rem;
+      color: var(--blue-dim);
+      max-width: 640px;
+      line-height: 1.65;
+      margin-bottom: 2rem;
+    }
+    .hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 1.5rem;
+      font-size: 0.79rem;
+      color: var(--blue-light);
+    }
+    .hero__meta i { margin-right: 0.3rem; }
+    @media (max-width: 560px) {
+      .hero__meta { flex-direction: column; gap: 0.3rem; }
+    }
+
+    /* ─── CHIFFRES-CLÉS ─── */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-top: 3px solid var(--gold);
+      margin-bottom: 3.5rem;
+    }
+    @media (max-width: 720px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 380px) { .stats-grid { grid-template-columns: 1fr; } }
+
+    .stat-item {
+      padding: 2.5rem 1.5rem 2rem;
+      border-right: 1px solid var(--border);
+      text-align: center;
+    }
+    .stat-item:last-child { border-right: none; }
+    @media (max-width: 720px) {
+      .stat-item:nth-child(2),
+      .stat-item:nth-child(4) { border-right: none; }
+      .stat-item:nth-child(1),
+      .stat-item:nth-child(2) { border-bottom: 1px solid var(--border); }
+    }
+    @media (max-width: 380px) {
+      .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
+      .stat-item:last-child { border-bottom: none; }
+    }
+
+    .stat-item i    { font-size: 1.5rem; color: var(--blue); display: block; margin-bottom: 1rem; opacity: .55; }
+    .stat-value     { font-size: 2.4rem; font-weight: 800; color: var(--blue); line-height: 1; margin-bottom: 0.5rem; }
+    .stat-label     { font-size: 0.8rem; color: var(--blue-dim); line-height: 1.45; max-width: 140px; margin: 0 auto; }
+
+    /* ─── MÉTA-DONNÉES ─── */
+    .meta-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem 2.5rem;
+      padding: 1.5rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+    @media (max-width: 560px) {
+      .meta-strip { gap: 0.75rem 1.5rem; }
+    }
+    .meta-item      { display: flex; align-items: center; gap: 0.5rem; font-size: 0.87rem; color: var(--blue-dim); }
+    .meta-item i    { color: var(--blue); opacity: .7; font-size: 1rem; }
+    .meta-item strong { color: var(--blue); font-weight: 600; }
+
+    /* ─── SOMMAIRE ─── */
+    .toc { padding: 1.5rem 0; border-bottom: 1px solid var(--border); }
+    .toc__label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+    .toc__list { list-style: none; display: flex; flex-wrap: wrap; gap: 0.25rem 0; }
+    .toc__list li { display: flex; align-items: center; }
+    .toc__list li::after { content: '·'; margin: 0 0.65rem; color: var(--border); font-size: 1.2rem; line-height: 1; }
+    .toc__list li:last-child::after { display: none; }
+    .toc__list a { font-size: 0.86rem; font-weight: 500; color: var(--blue); }
+    .toc__list a:hover { color: var(--gold); }
+    @media (max-width: 480px) {
+      .toc__list { flex-direction: column; gap: 0.5rem; }
+      .toc__list li::after { display: none; }
+      .toc__list a::before { content: '→ '; font-size: 0.75rem; opacity: .5; }
+    }
+
+    /* ─── SECTIONS CONTENU — structure commune ─── */
+    /* Chaque section est une bande full-width. Le contenu est contraint par .inner--wide */
+    .section-head { margin-bottom: 2.5rem; }
+    .section-head h2 { margin-top: 0.4rem; }
+
+    /* ─── Texte courant sur colonne étroite ─── */
+    .prose { max-width: var(--col); }
+    .prose p + p { margin-top: 1rem; }
+
+    /* ─── CARTES TRANSMISSION ─── */
+    .trans-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 680px) { .trans-grid { grid-template-columns: 1fr; gap: 1.75rem; } }
+
+    .trans-item i    { font-size: 1.6rem; color: var(--blue); display: block; margin-bottom: 0.85rem; }
+    .trans-item h3   { margin-bottom: 0.45rem; }
+    .trans-item p    { font-size: 0.9rem; color: var(--blue-dim); }
+    .trans-item .tag-main {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-left: 0.4rem;
+      vertical-align: middle;
+    }
+
+    /* ─── ENCADRÉ ACCENT ─── */
+    .accent-box {
+      margin-top: 3rem;
+      padding: 1.25rem 1.75rem;
+      background: var(--blue-bg);
+      border-left: 3px solid var(--blue);
+      font-size: 0.92rem;
+      color: var(--blue);
+      line-height: 1.65;
+      max-width: var(--col);
+    }
+
+    /* ─── BARRES SYMPTÔMES ─── */
+    .chart-wrap { max-width: 640px; margin-top: 2.5rem; }
+    .chart-label-top {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+    }
+    .bar-row   { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.1rem; }
+    .bar-name  { font-size: 0.87rem; color: var(--blue); width: 210px; flex-shrink: 0; }
+    .bar-track {
+      flex: 1;
+      height: 8px;
+      background: var(--border);
+      border-radius: 100px;
+      overflow: hidden;
+    }
+    .bar-fill  { height: 100%; border-radius: 100px; background: var(--blue); }
+    .bar-fill--lt { background: var(--blue-light); }
+    .bar-pct   { font-size: 0.82rem; font-weight: 700; color: var(--gold); width: 44px; text-align: right; flex-shrink: 0; }
+    .chart-note { font-size: 0.76rem; color: var(--blue-light); font-style: italic; margin-top: 1rem; max-width: 560px; }
+
+    @media (max-width: 520px) { .bar-name { width: 130px; font-size: 0.8rem; } }
+
+    /* ─── TIMELINE ─── */
+    .timeline-wrap { margin-top: 4rem; }
+    .timeline-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2rem;
+    }
+    .timeline {
+      display: flex;
+      position: relative;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      height: 1px;
+      background: var(--border);
+    }
+    .tl-step {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      padding: 0 0.75rem;
+    }
+    .tl-dot {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 2px solid var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      flex-shrink: 0;
+    }
+    .band--cream .tl-dot { background: var(--cream); }
+    .tl-dot i    { font-size: 1rem; color: var(--blue); }
+    .tl-title    { font-size: 0.87rem; font-weight: 700; color: var(--blue); margin-bottom: 0.2rem; }
+    .tl-sub      { font-size: 0.76rem; color: var(--blue-light); line-height: 1.45; }
+
+    @media (max-width: 560px) {
+      .timeline { flex-direction: column; gap: 1.25rem; }
+      .timeline::before { display: none; }
+      .tl-step { flex-direction: row; text-align: left; gap: 1.1rem; align-items: flex-start; padding: 0; }
+      .tl-dot  { margin-bottom: 0; flex-shrink: 0; }
+    }
+
+    /* ─── FORMES AIGUË / CHRONIQUE ─── */
+    .forms-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 640px) { .forms-grid { grid-template-columns: 1fr; gap: 2rem; } }
+
+    .form-block {}
+    .form-block__tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.65rem;
+      border-radius: 3px;
+      margin-bottom: 0.85rem;
+    }
+    .form-block__tag--acute   { background: var(--blue-bg); color: var(--blue); }
+    .form-block__tag--chronic { background: var(--gold-bg);  color: var(--gold); }
+    .form-block h3 { margin-bottom: 0.6rem; }
+    .form-block p  { font-size: 0.9rem; margin-bottom: 0.85rem; }
+    .form-block ul { list-style: none; display: flex; flex-direction: column; gap: 0.45rem; }
+    .form-block li {
+      font-size: 0.9rem;
+      color: var(--blue-dim);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+    }
+    .form-block li::before {
+      content: '';
+      display: inline-block;
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--blue);
+      flex-shrink: 0;
+      margin-top: 9px;
+    }
+    .form-block--chronic { border-top: 2px solid var(--gold); padding-top: 1.5rem; }
+    .form-block--chronic li::before { background: var(--gold); }
+
+    /* ─── LIEN DISCRET ─── */
+    .link-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.87rem;
+      font-weight: 600;
+      color: var(--blue);
+      margin-top: 1.5rem;
+      border-bottom: 1px solid transparent;
+      transition: border-color .18s, color .18s;
+    }
+    .link-more:hover { color: var(--gold); border-bottom-color: var(--gold); }
+    .link-more i { font-size: 0.85rem; }
+
+    /* ─── PRUDENCE ─── */
+    .prudence {
+      font-size: 0.81rem;
+      color: var(--blue-light);
+      font-style: italic;
+      margin-top: 1.75rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      max-width: var(--col);
+    }
+
+    /* ─── FAQ ─── */
+    .faq-list { display: flex; flex-direction: column; gap: 2rem; margin-top: 0.5rem; max-width: var(--col); }
+    .faq-q {
+      font-size: 0.97rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 0.4rem;
+    }
+    .faq-a { font-size: 0.9rem; color: var(--blue-dim); line-height: 1.7; }
+
+    /* ─── MAILLAGE ─── */
+    .maillage-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border: 1px solid var(--border);
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 680px) { .maillage-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 420px) {
+      .maillage-grid { grid-template-columns: 1fr; }
+      .maillage-link { border-right: none; }
+    }
+
+    .maillage-link {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1.25rem 1.4rem;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--blue);
+      text-decoration: none;
+      transition: background .18s, color .18s;
+      background: var(--white);
+    }
+    .maillage-link:hover { background: var(--blue-bg); color: var(--blue); }
+    .maillage-link i { font-size: 1rem; color: var(--blue); opacity: .6; flex-shrink: 0; }
+
+    /* ─── CTA FINAL ─── */
+    .cta-inner { text-align: center; }
+    .cta-inner h2 { color: var(--white); font-size: clamp(1.5rem, 3.5vw, 2.2rem); margin-bottom: 0.75rem; }
+    .cta-inner p  { color: rgba(255,255,255,.72); font-size: 1rem; margin-bottom: 2.25rem; }
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--gold);
+      color: var(--white);
+      font-family: var(--font);
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 0.9rem 2.25rem;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: opacity .18s;
+    }
+    .btn-cta:hover { opacity: 0.88; color: var(--white); }
+    .btn-cta i { font-size: 0.95rem; }
+
+    /* ─── FOOTER ─── */
+    footer { background: var(--white); border-top: 1px solid var(--border); padding: 2.25rem 0; }
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-copy { font-size: 0.79rem; color: var(--blue-light); }
+    .footer-links { display: flex; gap: 1.5rem; list-style: none; }
+    .footer-links a { font-size: 0.79rem; color: var(--blue-light); }
+    .footer-links a:hover { color: var(--blue); }
+
+    /* Footer logo texte (si pas d'image) */
+    .logo-text { text-decoration: none; display: flex; flex-direction: column; line-height: 1.1; gap: 0; }
+    .logo-text__ihu { font-size: 1.1rem; font-weight: 800; color: var(--blue); letter-spacing: 0.06em; }
+    .logo-text__med { font-size: 0.65rem; font-style: italic; color: var(--gold); }
+    .logo-text__inf { font-size: 0.58rem; font-weight: 700; letter-spacing: 0.12em; color: var(--blue); text-transform: uppercase; }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════════════════
+     HEADER
+════════════════════════════ -->
+<header>
+  <div class="inner--wide">
+    <div class="header-inner">
+      <a href="#" aria-label="IHU Méditerranée Infection — accueil">
+        <img class="logo-img"
+             src="https://ihu-medinfection.com/wp-content/uploads/2025/09/Capture-decran-2025-10-02-141939-1024x340.jpg"
+             alt="IHU Méditerranée Infection" />
+      </a>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="#">Soigner</a></li>
+          <li><a href="#">Diagnostic</a></li>
+          <li><a href="#">Rechercher</a></li>
+          <li><a href="#" aria-current="page">Fiches maladies</a></li>
+          <li><a href="#rdv" class="btn-nav">Prendre rendez-vous</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ════════════════════════════
+     FIL D'ARIANE
+════════════════════════════ -->
+<div class="breadcrumb">
+  <div class="inner--wide">
+    <a href="#">Accueil</a>
+    <span class="breadcrumb__sep" aria-hidden="true">›</span>
+    <a href="#">Fiches maladies &amp; protocoles</a>
+    <span class="breadcrumb__sep" aria-hidden="true">›</span>
+    <strong>Fièvre Q</strong>
+  </div>
+</div>
+
+<!-- ════════════════════════════
+     HERO — bande blanche
+════════════════════════════ -->
+<section class="hero band band--white" aria-labelledby="hero-title">
+  <div class="inner--wide">
+    <span class="overtitle">Fiche maladie · Zoonose</span>
+    <h1 id="hero-title">La fièvre Q</h1>
+    <p class="hero__chapeau">Une infection bactérienne transmise par les animaux, le plus souvent bénigne mais parfois grave. Comprendre ses causes, la reconnaître, la diagnostiquer et la traiter.</p>
+    <div class="hero__meta">
+      <span><i class="ti ti-calendar" aria-hidden="true"></i> Mise à jour : juillet 2026</span>
+      <span><i class="ti ti-clock" aria-hidden="true"></i> Lecture : 5 min</span>
+      <span><i class="ti ti-shield-check" aria-hidden="true"></i> Contenu relu par l'équipe médicale de l'IHU</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     CHIFFRES-CLÉS — bande crème
+════════════════════════════ -->
+<div class="band band--cream" aria-label="Chiffres-clés">
+  <div class="inner--wide">
+
+    <div class="stats-grid">
+      <article class="stat-item">
+        <i class="ti ti-mood-neutral" aria-hidden="true"></i>
+        <div class="stat-value">60 %</div>
+        <div class="stat-label">des cas sans aucun symptôme</div>
+      </article>
+      <article class="stat-item">
+        <i class="ti ti-hourglass" aria-hidden="true"></i>
+        <div class="stat-value">2–3</div>
+        <div class="stat-label">semaines d'incubation</div>
+      </article>
+      <article class="stat-item">
+        <i class="ti ti-heart-rate-monitor" aria-hidden="true"></i>
+        <div class="stat-value">&lt; 5 %</div>
+        <div class="stat-label">évoluent vers une forme chronique</div>
+      </article>
+      <article class="stat-item">
+        <i class="ti ti-calendar-event" aria-hidden="true"></i>
+        <div class="stat-value">1937</div>
+        <div class="stat-label">année d'identification</div>
+      </article>
+    </div>
+
+    <!-- Méta-données cliniques -->
+    <div class="meta-strip" role="complementary" aria-label="Données cliniques">
+      <div class="meta-item">
+        <i class="ti ti-bacteria" aria-hidden="true"></i>
+        <span><strong>Agent :</strong> <em>Coxiella burnetii</em></span>
+      </div>
+      <div class="meta-item">
+        <i class="ti ti-virus" aria-hidden="true"></i>
+        <span><strong>Type :</strong> zoonose bactérienne</span>
+      </div>
+      <div class="meta-item">
+        <i class="ti ti-cow" aria-hidden="true"></i>
+        <span><strong>Réservoir :</strong> ruminants d'élevage</span>
+      </div>
+      <div class="meta-item">
+        <i class="ti ti-wind" aria-hidden="true"></i>
+        <span><strong>Transmission :</strong> inhalation (principale)</span>
+      </div>
+    </div>
+
+    <!-- Sommaire -->
+    <nav class="toc" aria-label="Sommaire">
+      <div class="toc__label">Sommaire</div>
+      <ul class="toc__list">
+        <li><a href="#definition">Définition</a></li>
+        <li><a href="#transmission">Transmission</a></li>
+        <li><a href="#symptomes">Symptômes</a></li>
+        <li><a href="#formes">Formes aiguë &amp; chronique</a></li>
+        <li><a href="#diagnostic">Diagnostic</a></li>
+        <li><a href="#traitement">Traitement</a></li>
+        <li><a href="#prevention">Prévention</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</div>
+
+<!-- ════════════════════════════
+     DÉFINITION — bande blanche
+════════════════════════════ -->
+<section class="band band--white" id="definition" aria-labelledby="h2-def">
+  <div class="inner--wide">
+    <div class="section-head">
+      <span class="overtitle">Définition</span>
+      <h2 id="h2-def">Qu'est-ce que la fièvre Q ?</h2>
+    </div>
+    <div class="prose">
+      <p>La fièvre Q est une maladie infectieuse causée par la bactérie <em>Coxiella burnetii</em>. Le « Q » vient de l'anglais <em>Query</em> (« question »), car la maladie est restée longtemps mystérieuse après sa première description en Australie en 1937. C'est une <strong>zoonose</strong> : elle se transmet naturellement de l'animal à l'être humain.</p>
+      <p>La bactérie est particulièrement résistante dans l'environnement : elle survit longtemps dans la poussière, le sol et les déjections séchées, ce qui explique une transmission possible à distance des animaux, même sans contact direct avec un troupeau. <em>Coxiella burnetii</em> est un pathogène intracellulaire obligatoire : elle ne peut se multiplier qu'à l'intérieur des cellules de son hôte.</p>
+      <p>L'IHU Méditerranée Infection est l'un des centres de référence français sur cette pathologie, notamment pour son diagnostic sérologique et moléculaire.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     TRANSMISSION — bande crème
+════════════════════════════ -->
+<section class="band band--cream" id="transmission" aria-labelledby="h2-trans">
+  <div class="inner--wide">
+    <div class="section-head">
+      <span class="overtitle">Épidémiologie</span>
+      <h2 id="h2-trans">Comment se transmet-elle ?</h2>
+    </div>
+    <div class="prose">
+      <p>Le réservoir principal est constitué par les ruminants d'élevage — ovins, bovins, caprins. La bactérie est présente en très grande quantité dans les produits de mise-bas (placenta, liquides amniotiques), mais aussi dans le lait, les urines et les déjections. La contamination humaine se fait selon trois voies principales :</p>
+    </div>
+
+    <div class="trans-grid">
+      <article class="trans-item">
+        <i class="ti ti-wind" aria-hidden="true"></i>
+        <h3>Inhalation <span class="tag-main">voie principale</span></h3>
+        <p>Respiration de poussières ou d'aérosols contaminés, parfois transportés par le vent sur plusieurs centaines de mètres. Un seul organisme inhalé peut suffire à provoquer l'infection.</p>
+      </article>
+      <article class="trans-item">
+        <i class="ti ti-milk" aria-hidden="true"></i>
+        <h3>Voie alimentaire</h3>
+        <p>Consommation de lait cru ou de produits laitiers non pasteurisés issus d'animaux infectés. Voie plus rare mais documentée, en particulier chez les enfants.</p>
+      </article>
+      <article class="trans-item">
+        <i class="ti ti-bug" aria-hidden="true"></i>
+        <h3>Voie vectorielle</h3>
+        <p>Piqûres de tiques, impliquées surtout dans le cycle animal. Cette voie reste marginale dans la contamination humaine en France métropolitaine.</p>
+      </article>
+    </div>
+
+    <div class="accent-box" role="note">
+      <strong>Populations les plus exposées :</strong> éleveurs, vétérinaires, personnels d'abattoir, tondeurs, bergers, et plus largement les personnes vivant à proximité d'élevages. La transmission interhumaine est exceptionnelle et ne justifie pas de mesures d'isolement standard.
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     SYMPTÔMES — bande blanche
+════════════════════════════ -->
+<section class="band band--white" id="symptomes" aria-labelledby="h2-symp">
+  <div class="inner--wide">
+    <div class="section-head">
+      <span class="overtitle">Tableau clinique</span>
+      <h2 id="h2-symp">Quels sont les symptômes ?</h2>
+    </div>
+    <div class="prose">
+      <p>La majorité des infections passent inaperçues — environ 60 % des personnes contaminées ne développent aucun signe. Lorsqu'elle est symptomatique, la forme aiguë débute 2 à 3 semaines après l'exposition et ressemble à un syndrome grippal intense, parfois accompagné d'une atteinte hépatique ou pulmonaire.</p>
+    </div>
+
+    <!-- Infographie barres -->
+    <div class="chart-wrap" aria-label="Fréquence des symptômes dans les formes aiguës symptomatiques">
+      <div class="chart-label-top">Fréquence des symptômes — formes aiguës symptomatiques</div>
+      <div class="bar-row">
+        <div class="bar-name">Fièvre élevée (&gt; 38,5 °C)</div>
+        <div class="bar-track"><div class="bar-fill" style="width:95%" role="img" aria-label="95 %"></div></div>
+        <div class="bar-pct">~95 %</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-name">Céphalées intenses</div>
+        <div class="bar-track"><div class="bar-fill" style="width:75%"></div></div>
+        <div class="bar-pct">~75 %</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-name">Douleurs musculaires</div>
+        <div class="bar-track"><div class="bar-fill" style="width:60%"></div></div>
+        <div class="bar-pct">~60 %</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-name">Atteinte hépatique</div>
+        <div class="bar-track"><div class="bar-fill bar-fill--lt" style="width:40%"></div></div>
+        <div class="bar-pct">~40 %</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-name">Pneumonie</div>
+        <div class="bar-track"><div class="bar-fill bar-fill--lt" style="width:30%"></div></div>
+        <div class="bar-pct">~30 %</div>
+      </div>
+      <p class="chart-note">Ordres de grandeur indicatifs à visée pédagogique, variables selon les études et les populations. À valider par les équipes médicales de l'IHU avant toute diffusion officielle.</p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline-wrap">
+      <div class="timeline-label">De l'exposition à la maladie</div>
+      <div class="timeline" role="list" aria-label="Progression temporelle de la maladie">
+        <div class="tl-step" role="listitem">
+          <div class="tl-dot"><i class="ti ti-wind" aria-hidden="true"></i></div>
+          <div class="tl-title">Exposition</div>
+          <div class="tl-sub">Jour 0<br>Contact contaminant</div>
+        </div>
+        <div class="tl-step" role="listitem">
+          <div class="tl-dot"><i class="ti ti-hourglass" aria-hidden="true"></i></div>
+          <div class="tl-title">Incubation</div>
+          <div class="tl-sub">2 à 3 semaines<br>Multiplication silencieuse</div>
+        </div>
+        <div class="tl-step" role="listitem">
+          <div class="tl-dot"><i class="ti ti-temperature" aria-hidden="true"></i></div>
+          <div class="tl-title">Phase aiguë</div>
+          <div class="tl-sub">1 à 2 semaines<br>Fièvre, céphalées, myalgies</div>
+        </div>
+        <div class="tl-step" role="listitem">
+          <div class="tl-dot"><i class="ti ti-check" aria-hidden="true"></i></div>
+          <div class="tl-title">Guérison</div>
+          <div class="tl-sub">Le plus souvent<br>Surveillance recommandée</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     FORMES — bande crème
+════════════════════════════ -->
+<section class="band band--cream" id="formes" aria-labelledby="h2-formes">
+  <div class="inner--wide">
+    <div class="section-head">
+      <span class="overtitle">Évolution</span>
+      <h2 id="h2-formes">Forme aiguë et forme chronique</h2>
+    </div>
+    <div class="prose">
+      <p>La grande majorité des infections à <em>Coxiella burnetii</em> restent à l'état aigu et guérissent, spontanément ou sous traitement. Chez une minorité de patients fragilisés, l'infection peut persister et évoluer vers une forme chronique sévère.</p>
+    </div>
+
+    <div class="forms-grid">
+      <article class="form-block">
+        <span class="form-block__tag form-block__tag--acute">Forme aiguë</span>
+        <h3>La plus fréquente</h3>
+        <p>Guérit le plus souvent spontanément ou sous antibiothérapie courte. Les manifestations les plus communes sont :</p>
+        <ul>
+          <li>Syndrome pseudo-grippal fébrile</li>
+          <li>Hépatite (inflammation du foie)</li>
+          <li>Pneumonie atypique</li>
+          <li>Péricardite (plus rare)</li>
+        </ul>
+      </article>
+      <article class="form-block form-block--chronic">
+        <span class="form-block__tag form-block__tag--chronic">Forme chronique</span>
+        <h3>Rare mais sérieuse</h3>
+        <p>Survient des mois après l'infection initiale, presque exclusivement chez des patients à risque identifiable. La complication majeure est :</p>
+        <ul>
+          <li>Endocardite infectieuse (la plus grave)</li>
+          <li>Infection vasculaire (anévrisme)</li>
+          <li>Réactivation chez la femme enceinte</li>
+          <li>Ostéoarthrite chronique (plus rare)</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     DIAGNOSTIC — bande blanche
+════════════════════════════ -->
+<section class="band band--white" id="diagnostic" aria-labelledby="h2-diag">
+  <div class="inner--wide">
+    <div class="section-head">
+      <span class="overtitle">Biologie</span>
+      <h2 id="h2-diag">Comment pose-t-on le diagnostic ?</h2>
+    </div>
+    <div class="prose">
+      <p>Le diagnostic repose principalement sur la <strong>sérologie</strong>, qui détecte les anticorps produits par l'organisme contre <em>Coxiella burnetii</em>. L'analyse distingue deux phases antigéniques (phase I et phase II) permettant de différencier une infection aiguë d'une forme chronique — un élément clé pour adapter le traitement.</p>
+      <p>En complément, une <strong>PCR</strong> (réaction en chaîne par polymérase) sur prélèvement sanguin peut détecter directement le matériel génétique de la bactérie, particulièrement utile en tout début d'infection avant l'apparition des anticorps. L'IHU Méditerranée Infection dispose d'une expertise reconnue pour ces analyses.</p>
+    </div>
+    <a href="#" class="link-more"><i class="ti ti-arrow-right" aria-hidden="true"></i> En savoir plus sur le diagnostic sérologique à l'IHU</a>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     TRAITEMENT — bande crème
+════════════════════════════ -->
+<section class="band band--cream" id="traitement" aria-labelledby="h2-trait">
+  <div class="inner--wide">
+    <div class="section-head">
+      <span class="overtitle">Prise en charge</span>
+      <h2 id="h2-trait">Traitement et protocole de prise en charge</h2>
+    </div>
+    <div class="prose">
+      <p>Le traitement repose sur une <strong>antibiothérapie adaptée</strong>, toujours sur prescription médicale après confirmation diagnostique. La durée et la molécule utilisée dépendent de la forme clinique et du profil du patient.</p>
+      <p>La <strong>forme aiguë</strong> répond généralement bien à un traitement de quelques semaines. La <strong>forme chronique</strong>, notamment l'endocardite, impose un traitement prolongé — parfois de plusieurs mois à plusieurs années — avec un suivi sérologique et clinique spécialisé rapproché pour évaluer l'efficacité thérapeutique.</p>
+    </div>
+    <p class="prudence">
+      <i class="ti ti-info-circle" aria-hidden="true"></i>
+      Ce contenu est informatif et ne remplace en aucun cas une consultation médicale. Ne prenez aucun traitement sans avis d'un professionnel de santé.
+    </p>
+    <a href="#" class="link-more"><i class="ti ti-arrow-right" aria-hidden="true"></i> Consulter le protocole thérapeutique complet <small style="font-weight:400;color:var(--blue-light)">(accès professionnel)</small></a>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     PRÉVENTION — bande blanche
+════════════════════════════ -->
+<section class="band band--white" id="prevention" aria-labelledby="h2-prev">
+  <div class="inner--wide">
+    <div class="section-head">
+      <span class="overtitle">Hygiène &amp; protection</span>
+      <h2 id="h2-prev">Prévention</h2>
+    </div>
+    <div class="prose">
+      <p>Il n'existe pas de vaccin disponible en France pour la population générale. La prévention repose sur des <strong>mesures d'hygiène en élevage</strong> et la protection individuelle des travailleurs exposés : port de masque lors des mises-bas, gestion sécurisée des produits placentaires, non-consommation de lait cru.</p>
+      <p>En cas de suspicion d'épizootie (animaux avortants groupés) dans un élevage, le signalement aux autorités vétérinaires permet d'éviter la dissémination dans l'environnement et de protéger les riverains.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     FAQ — bande crème
+════════════════════════════ -->
+<section class="band band--cream" id="faq" aria-labelledby="h2-faq">
+  <div class="inner--wide">
+    <div class="section-head">
+      <span class="overtitle">Questions fréquentes</span>
+      <h2 id="h2-faq">Ce que les patients demandent</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">La fièvre Q est-elle contagieuse d'une personne à l'autre ?</div>
+        <div class="faq-a">La transmission interhumaine est exceptionnelle et ne constitue pas un mode de contamination habituel. On se contamine presque toujours par les animaux infectés ou leur environnement. Aucun isolement particulier n'est requis pour les patients.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Existe-t-il un vaccin contre la fièvre Q ?</div>
+        <div class="faq-a">Un vaccin destiné aux professions exposées existe en Australie. En France, il n'est pas commercialisé pour la population générale. La prévention repose surtout sur les mesures d'hygiène en élevage et la protection individuelle des travailleurs les plus exposés.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Suis-je à risque de forme chronique ?</div>
+        <div class="faq-a">Le risque de forme chronique concerne essentiellement les personnes ayant une atteinte cardiaque préexistante (valvulopathie, anévrisme aortique), une immunodépression sévère ou une grossesse. Si vous appartenez à ces groupes et avez été exposé à <em>Coxiella burnetii</em>, un suivi sérologique régulier est recommandé même en l'absence de symptômes.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Quand consulter ?</div>
+        <div class="faq-a">Devant une fièvre prolongée inexpliquée (au-delà de 5–7 jours), des maux de tête intenses ou un syndrome grippal persistant — surtout si vous avez été en contact avec des animaux d'élevage dans les semaines précédentes — consultez rapidement votre médecin. Mentionnez l'exposition animale : cela orientera le bilan biologique.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     MAILLAGE — bande blanche
+════════════════════════════ -->
+<section class="band band--white" aria-labelledby="h2-autres">
+  <div class="inner--wide">
+    <div class="section-head">
+      <span class="overtitle">À explorer</span>
+      <h2 id="h2-autres">Autres fiches maladies</h2>
+    </div>
+    <div class="maillage-grid">
+      <a href="#" class="maillage-link" aria-label="Fiche maladie : Paludisme">
+        <i class="ti ti-mosquito" aria-hidden="true"></i> Paludisme (<em>Plasmodium</em>)
+      </a>
+      <a href="#" class="maillage-link" aria-label="Fiche maladie : Maladie de Whipple">
+        <i class="ti ti-bacteria" aria-hidden="true"></i> Maladie de Whipple
+      </a>
+      <a href="#" class="maillage-link" aria-label="Fiche maladie : Fièvre boutonneuse méditerranéenne">
+        <i class="ti ti-bug" aria-hidden="true"></i> Fièvre boutonneuse méditerranéenne
+      </a>
+      <a href="#" class="maillage-link" aria-label="Fiche maladie : Endocardite infectieuse">
+        <i class="ti ti-heart" aria-hidden="true"></i> Endocardite infectieuse
+      </a>
+      <a href="#" class="maillage-link" aria-label="Fiche maladie : Leptospirose">
+        <i class="ti ti-droplet" aria-hidden="true"></i> Leptospirose
+      </a>
+      <a href="#" class="maillage-link" aria-label="Fiche maladie : Tuberculose">
+        <i class="ti ti-lungs" aria-hidden="true"></i> Tuberculose
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     CTA — bande bleue
+════════════════════════════ -->
+<section class="band band--blue" id="rdv" aria-labelledby="cta-title">
+  <div class="inner--wide">
+    <div class="cta-inner">
+      <h2 id="cta-title">Besoin d'un avis spécialisé ?</h2>
+      <p>Consultations en maladies infectieuses et tropicales à l'IHU Méditerranée Infection, Marseille.</p>
+      <a href="#" class="btn-cta">
+        <i class="ti ti-calendar-plus" aria-hidden="true"></i> Prendre rendez-vous
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ════════════════════════════
+     FOOTER
+════════════════════════════ -->
+<footer>
+  <div class="inner--wide">
+    <div class="footer-inner">
+      <a href="#" class="logo-text" aria-label="IHU Méditerranée Infection">
+        <span class="logo-text__ihu">IHU</span>
+        <span class="logo-text__med">Méditerranée</span>
+        <span class="logo-text__inf">Infection</span>
+      </a>
+      <p class="footer-copy">© 2025 IHU Méditerranée Infection — Contenu informatif, ne remplace pas une consultation médicale.</p>
+      <ul class="footer-links">
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Plan du site</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
